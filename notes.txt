@@ -1,0 +1,4 @@
+to validate a your work and make sure nothing is missing 
+http://validator.w3.org/
+2. some key lookup words
+	page transitons for navegations

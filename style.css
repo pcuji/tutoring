@@ -1,0 +1,156 @@
+
+
+body{
+  background: #ffff99;
+}
+
+
+ul li  {
+  /*
+  the marging and padding will take out the inner and outher space of an element
+  in this case form all unorder list because they are list befor the header
+  and are global of for all the document Example the bullet points of the nabigation
+list
+  */
+  margin: 0;
+  padding: 0;
+}
+
+header  {
+  color: #660066;
+  font-family: 'Dancing Script', cursive;
+  background-color: #ffff99;
+  font-size: 35px;
+}
+
+
+nav {
+  position: fixed;
+  background: #3BF5D7;
+  /* text-align: center; */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0E0E0E;
+  text-align: center; /* align the text inside the midle box */
+  /*@@@@@@@@@@@@@@@@@
+  -webkit-box-shadow: 2px 2px 3px #888;
+  -moz-box-shadow: 2px 2px 3px #888;
+  @@@@@@@@@@@@@@@@@@@@*/
+  box-shadow: 2px 2px 3px #888;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 90%;
+
+}
+nav  li  {
+  display: inline; /*will display horizintally */
+  font-size: 25px;
+  padding: 0 20px 0 20px; /* makes to have paddding among the items titles in the list
+                              and therefore they look separate*/
+}
+/********************
+image for first picture of cinamon roll (note that the html was modify)
+*********************/
+#sepate_squre_4_pic{
+  float: right;
+}
+
+
+/****************
+Define css media query: this very much is for different exprience of propeties of elements
+for example the color propeties  of bakgrounds will change base on the device one is using
+lets say a computer vs an iphone this is easy to test just by shirnking the size of the screen
+******************/
+
+h2 ,h3  {
+  padding: 25px;
+  color: #660066; /*purle just like the header color */
+  font-family: 'Dancing Script', cursive;
+  background-color: red;
+  font-size: 35px;
+  box-shadow: 2px 2px 3px #888;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 50%;   /* to adjust how long the background of the h2 will be */
+}
+
+ @media  (min-width : 500px ) {
+    h2 , h3 {
+      color: #ff0066; /* pinki color */
+      background-color: blue;
+    }
+}
+
+
+#one{
+  min-height: 30px;      /* to have a min height of the text of 30 pixels*/
+  font-family: georgia;  /* font of the letters Description */
+  text-align: left;
+  padding: 30px;      /* gives the marging of the descriptions so this way does not look close to the computer frame */
+  margin: 30px;
+}
+
+#two {
+  font-family: georgia;
+  padding:  30px;  /*will help the two section stay away of marging */
+  border: dotted #cc0066;
+  margin: 30px; /* makes the margin stay away from the frame of the website */
+}
+
+h5 {
+  color: #660066;
+  font-family: 'Dancing Script', cursive;
+  background-color: #ffff99;
+  font-size: 35px;
+}
+
+
+/*****************
+rest of images
+*****************/
+
+#four{
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+#five{
+  text-align: center;
+  padding: 30px;
+}
+
+/*
+***************************************
+pick a element that you want to have an animation
+the pick the transition
+the following is the animation form to
+.elemnet { (which is a class )
+    transition : [propety] [duration] [transition] [delay]
+  }
+  things that you can cange are: font-size ,background-color,width, left
+  things that can not be animated are: display, font-family, position
+consider preformance when animated things! are we animated the right propeties
+preformance (this are good): position, rotation, scale, opacity
+****************************************/
+
+.box {
+  display: inline-block;
+  background: pink;
+  width: 500px;
+  height: 180px;
+  transition: transform 100ms ease-in-out 2s;
+}
+
+.box :hover {
+  transform: translate(100px, 70px);
+}
+
+/*
+sources
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders
+https://www.youtube.com/watch?v=X8sUiRemgqU
+https://www.youtube.com/watch?v=8kK-cA99SA0
+https://stackoverflow.com/questions/33701531/css-transition-not-working-on-hover
+
+*/
